@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Margino/nodejs_learning.git"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Margino/nodejs_learning/issues"
+  },
+  "homepage": "https://github.com/Margino/nodejs_learning#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
