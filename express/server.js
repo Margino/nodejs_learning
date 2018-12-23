@@ -1,21 +1,22 @@
 const express = require('express');
+const hbs = require('hbs');
 
 const app = express();
 
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-    res.send('Hello express');
+    res.render('home.hbs', {
+        title: 'Home page',
+        welcomeText: 'Welcome to the website!',
+        year: new Date().getFullYear()
+    });
 });
 
 app.get('/about', (req, res) => {
-    res.send({
-        name: 'Alex',
-        like: [
-            'fruit',
-            'cats',
-            'fish'
-        ]
+    res.render('about.hbs', {
+        title: 'About',
+        year: new Date().getFullYear()
     });
 });
 
