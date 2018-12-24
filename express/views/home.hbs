@@ -5,10 +5,8 @@
     <title>Some website</title>
 </head>
 <body>
-    <h1>{{title}}</h1>
-    <p>{{welcomeText}}</p>
-    <footer>
-        <p>Copiright {{year}}</p>
-    </footer>
+    {{> header}}
+    <p>{{screamIt welcomeText}}</p>
+    {{> footer}}
 </body>
 </html>
