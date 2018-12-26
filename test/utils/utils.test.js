@@ -8,11 +8,27 @@ it('should add two numbers', () => {
     expect(typeof res).toBe('number');
 });
 
+it('should async add to number', (done) => {
+    utils.asyncAdd(4, 3, (sum) => {
+        expect(sum).toBe(7);
+        expect(typeof sum).toBe('number');
+        done();
+    })
+});
+
 it('should square a number', () => {
     const res = utils.square(3);
 
     expect(res).toBe(9);
     expect(typeof res).toBe('number');
+});
+
+it ('should async square a number', (done) => {
+    utils.asyncSquare(5, (res) => {
+        expect(res).toBe(25);
+        expect(typeof res).toBe('number');
+        done();
+    });
 });
 
 it('should expect some number', () => {
