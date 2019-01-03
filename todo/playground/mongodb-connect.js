@@ -11,7 +11,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true
     console.log('Connected to MongoDB server');
 
     // const todoDb = db.db('Todos');
-    //
+
     // todoDb.collection('Todos').insertOne({
     //     text: 'Something to do',
     //     complited: false
@@ -36,6 +36,14 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true
     //
     //     console.log(JSON.stringify(result.ops[0]._id.getTimestamp(), undefined, 2));
     // });
+
+    const userDb = db.db('User');
+
+    userDb.collection('User').find({name: 'Alex'}).toArray().then((docs) => {
+        console.log(JSON.stringify(docs, undefined, 2));
+    }, (err) => {
+        console.log('Unable to fetch user');
+    });
 
     db.close();
 });
