@@ -12,3 +12,5 @@
 - [Mocha](https://mochajs.org/) - asynchronous testing
 - [Expect](https://jestjs.io/docs/en/expect.html) - to check that values meet certain conditions
 - [Supertest](https://www.npmjs.com/package/supertest) - to testing HTTP
+- [Robomongo](https://www.npmjs.com/package/mongodb) - GUI for MongoDB
+- [Mongodb native](https://github.com/mongodb/node-mongodb-native)
