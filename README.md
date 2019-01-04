@@ -14,3 +14,4 @@
 - [Supertest](https://www.npmjs.com/package/supertest) - to testing HTTP
 - [Robomongo](https://www.npmjs.com/package/mongodb) - GUI for MongoDB
 - [Mongodb native](https://github.com/mongodb/node-mongodb-native)
+- [Mongodb docs](https://docs.mongodb.com/manual/reference/) - docs
