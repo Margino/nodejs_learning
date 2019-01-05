@@ -15,3 +15,4 @@
 - [Robomongo](https://www.npmjs.com/package/mongodb) - GUI for MongoDB
 - [Mongodb native](https://github.com/mongodb/node-mongodb-native)
 - [Mongodb docs](https://docs.mongodb.com/manual/reference/) - docs
+- [Mongoose](https://mongoosejs.com/) - object modeling
